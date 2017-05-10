@@ -1,0 +1,57 @@
+$maxW: 960px;
+$themeC: #00bcd4;
+
+:host {
+	position: relative;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+}
+
+nav {
+	max-width: $maxW;
+	padding: 0 16px;
+	box-sizing: border-box;
+	height: 64px;
+	background: $themeC;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.home {
+		background: url("../assets/home.svg") center center / cover no-repeat;
+	}
+
+	.google {
+		background: url("../assets/search.svg") center center / cover no-repeat;
+	}
+}
+
+footer {
+	max-width: $maxW;
+	width: 100%;
+	position: fixed;
+	padding: 0 26px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 64px;
+	background: $themeC;
+	bottom: 0;
+	left: calc(50%);
+	transform: translate(-50%);
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	.gitHubLink {
+		background: url("../assets/github-logo.svg") center center / cover no-repeat;
+		margin: 0;
+	}
+}

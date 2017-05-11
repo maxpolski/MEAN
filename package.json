@@ -1,5 +1,5 @@
 {
-  "name": "chat",
+  "name": "photos",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,8 +12,11 @@
     "ejs": "~0.8.5",
     "express": "~3.4.8",
     "mongodb": "^2.2.26",
+    "mongoose": "^4.9.8",
     "morgan": "~1.0.0",
+    "nconf": "^0.8.4",
     "nodemon": "^1.11.0",
+    "request-promise": "^4.2.1",
     "static-favicon": "~1.0.0"
   }
 }

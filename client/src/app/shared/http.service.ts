@@ -13,7 +13,8 @@ export class HttpService {
     }
 
     public getData(param: string): Observable<IPhoto[]> {
-        let url = `http://jsonplaceholder.typicode.com/${param}`;
+        // let url = `http://jsonplaceholder.typicode.com/${param}`;
+        const url = `/${param}`;
         return this.http.get(url)
             .map((resp: Response) => {
                 return resp.json();

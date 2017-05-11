@@ -20,7 +20,7 @@ export class AlbumComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.httpService.getData(`albums/${this.id}/photos`).subscribe(
+        this.httpService.getData(`albums/${this.id}`).subscribe(
             data => {
                 this.photos = data;
             }

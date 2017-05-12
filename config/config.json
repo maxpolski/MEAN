@@ -1,7 +1,7 @@
 {
-  "port": 4200,
+  "port": 8000,
   "mongoose": {
-    "uri": "mongodb://127.0.0.1:27017/photos",
+    "uri": "mongodb://localhost:27017/photos",
     "options": {
       "server": {
         "socketOptions": {

@@ -33,4 +33,9 @@ module.exports = (app) => {
             res.json(photos);
         });
     });
+
+    app.get('*', (req, res, next) => {
+        res.sendfile(path.join(__dirname, '/client/dist/index.html'));
+    });
+
 };
